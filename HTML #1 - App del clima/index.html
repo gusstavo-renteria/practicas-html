@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>HTML #1 | App del clima</title>
+  <meta name="author" content="https://github.com/gusstavo-renteria">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Tarjeta principal -->
+  <main id="weather-card">
+
+    <!-- Formulario -->
+    <form id="weather-form">
+      <i class="fa-solid fa-location-dot"></i>
+      <input type="text" name="country" id="country-text" placeholder="Busca tu ciudad" autofocus autocomplete="off">
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+
+    <!-- Información -->
+    <article id="weather-info">
+
+      <!-- Información | Sección de resultados exitosos -->
+      <section id="search-result">
+        <img src="images/clear.png" alt="preview">
+        <span id="temperature"><span>12</span>°C</span>
+        <span id="description">Soleado</span>
+
+        <!-- detalles sobre el clima -->
+        <div class="weather-details">
+          <div class="humidity">
+            <i class="fa-solid fa-water"></i>
+            <div class="text">
+              <span>99%</span>
+              <p>Humedad</p>
+            </div>
+          </div>
+          <div class="wind">
+            <i class="fa-solid fa-wind"></i>
+            <div class="text">
+              <span>4km/h</span>
+              <p>Viento</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Información | Sección de resultados no exitosos -->
+      <section id="not-found">
+        <img src="images/404.png" alt="not-found">
+        <p>No se encontraron resultados.</p>
+      </section>
+    </article>
+
+  </main>
+
+  <!-- scripts -->
+  <script src="https://kit.fontawesome.com/bcb2cb7a69.js" crossorigin="anonymous"></script>
+  <script src="main.js"></script> 
+</body>
+</html>
+<!-- ▄▄▄
+   ▄▀░▄░▀▄
+   █░▀▄▄▀█▄█▄▀
+  ▄▄█▄▄▄▄███▀ 
+ -->

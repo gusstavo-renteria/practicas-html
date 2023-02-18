@@ -1,0 +1,15 @@
+* FontAwesome:
+<script src="https://kit.fontawesome.com/bcb2cb7a69.js" crossorigin="anonymous"></script>
+
+* API key:
+e47e5c8d61d75429f0e10d722c33f4ff
+
+* URL:
+https://api.openweathermap.org/data/2.5/weather?q={city name}&units=metric&appid={API key}
+
+* Font:
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+font-family: 'Raleway', sans-serif;

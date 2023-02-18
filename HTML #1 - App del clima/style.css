@@ -1,0 +1,179 @@
+:root {
+  color: #0A2647;
+  font-family: 'Raleway', sans-serif;
+  font-size: 10px;
+}
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+body {
+  min-width: 100%;
+  min-height: 100vh;
+
+  display: grid;
+  place-items: center;
+
+  background: #20262E;
+}
+img {
+  width: 66%;
+  object-fit: cover;
+}
+/* =============== */
+
+/* tarjeta */
+/*  */
+main {
+  width: 90%;
+  padding: 2rem;
+  min-width: 28rem;
+  max-width: 42rem;
+  position: relative;
+
+  display: grid;
+  justify-content: center;
+
+  background: #E9E8E8;
+  border-radius: 1.4rem;
+}
+/* =============== */
+/* formulario */
+main > form#weather-form {
+  align-items: center;
+  display: flex;
+}
+main > form > i {
+  font-size: 2.4rem;
+}
+main > form > input#country-text {
+  flex: 1;
+  width: 100%;
+  height: 4.4rem;
+  padding: 1rem;
+
+  color: #0A2647;
+  font-size: 2rem;
+
+  border: none;
+  background: none;
+  outline: none;
+}
+main > form > input#country-text::placeholder {
+  color: #0A2647a0;
+}
+main > form > button {
+  width: 4.2rem;
+  height: 4.2rem;
+
+  border: none;
+  border-radius: 50%;
+
+  font-size: 2.2rem;
+  background: #8EA7E9a0;
+  box-shadow: .1rem .1rem .4rem #00000020;
+}
+main > form > button:hover {
+  filter: brightness(1.1);
+}
+/* =============== */
+
+/*  */
+/* información */
+main > article {
+  height: 0;
+  display: grid;
+  place-items: center;
+
+  transition: height .12s ease-in-out;
+}
+main > article.active {
+  height: 46rem;
+}
+/* información | <section id="search-result"> */
+main > article > section#search-result {
+  /* display: grid; */
+  display: none;
+  place-items: center;
+}
+main > article > section#search-result > img {
+  animation: pop-up .2s ease-in-out;
+}
+main > article > section#search-result > #temperature {
+  margin-top: 2rem;
+  font-weight: bold;
+  font-size: 2rem;
+
+  display: flex;
+  gap: .5rem;
+
+  animation: pop-up .2s ease-in-out;
+}
+main > article > section#search-result > #temperature > span {
+  font-size: 6rem;
+  line-height: 6rem;
+}
+main > article > section#search-result > #description {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 2.6rem;
+}
+main > article > section#search-result > .weather-details {
+  width: 100%;
+  margin-top: 4rem;
+
+  display: flex;
+  justify-content: space-around;
+}
+main > article > section#search-result > .weather-details > .humidity,
+main > article > section#search-result > .weather-details > .wind {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+
+  animation: pop-up .2s ease-in-out;
+}
+main > article > section#search-result > .weather-details > .humidity > i ,
+main > article > section#search-result > .weather-details > .wind > i {
+  font-size: 3rem;
+}
+main > article > section#search-result > .weather-details > .humidity > .text > span,
+main > article > section#search-result > .weather-details > .wind > .text > span {
+  font-size: 2.2rem;
+}
+main > article > section#search-result > .weather-details > .humidity > .text > p,
+main > article > section#search-result > .weather-details > .wind > .text > p {
+  margin-top: .4rem;
+  font-size: 1.6rem;
+  opacity: .8;
+}
+/* información | <section id="not-found"> */
+main > article > section#not-found {
+  /* display: grid; */
+  display: none;
+  padding-top: 4rem;
+  gap: 6rem;
+  place-items: center;
+}
+main > article > section#not-found > img {
+  width: 90%;
+  animation: pop-up .2s ease-in-out;
+}
+main > article > section#not-found > p {
+  font-size: 2rem;
+  animation: pop-up .2s ease-in-out;
+}
+/* =============== */
+
+/*  */
+/* animaciones */
+@keyframes pop-up {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
