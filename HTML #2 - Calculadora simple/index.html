@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>HTML #2 | Calculadora simple</title>
+  <meta name="author" content="https://github.com/gusstavo-renteria">
+
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+  <!-- Calculadora -->
+  <main>
+
+    <!-- Pantalla -->
+    <form id="form-calculator">
+      <input type="text" pattern="(.*\d)" value="0" name="input_calculator" id="input-calculator" disabled>
+    </form>
+
+    <!-- Botones -->
+    <section id="calculator-buttons">
+      <button class="reset ac">AC</button>
+      <button class="sqrt op">√</button>
+      <button class="operation op">%</button>
+      <button class="operation op">/</button>
+
+      <button class="number">7</button>
+      <button class="number">8</button>
+      <button class="number">9</button>
+      <button class="operation op">*</button>
+
+      <button class="number">4</button>
+      <button class="number">5</button>
+      <button class="number">6</button>
+      <button class="operation op">-</button>
+
+      <button class="number">1</button>
+      <button class="number">2</button>
+      <button class="number">3</button>
+      <button class="operation op">+</button>
+
+      <button class="number">0</button>
+      <button class="number">.</button>
+      <button class="delete rm">&lt;</button>
+      <button class="equal eq">=</button>
+    </section>
+  </main>
+
+  <!-- scripts -->
+  <script src="src/main.js" type="module"></script>
+</body>
+</html>
+<!-- ▄▄▄
+   ▄▀░▄░▀▄
+   █░▀▄▄▀█▄█▄▀
+  ▄▄█▄▄▄▄███▀ 
+ -->
